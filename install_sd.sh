@@ -10,7 +10,7 @@ tar xvf tes3mp-GNU+Linux-x86_64-release-0.8.1-68954091c5-6da3fdea59.tar.gz
 cd TES3MP
 cwd=$(pwd)
 
-echo -e "echo Starting TES3MP Server\nkonsole --hold -e sh $cwd/tes3mp-server > /dev/null 2>&1 &\necho TES3MP-SERVER Started.\nkonsole --hold -e sh $cwd/tes3mp > /dev/null 2>&1 &\necho TES3MP Started." > startmw.sh
+echo -e "#!/bin/bash\necho Starting TES3MP Server\nkonsole --hold -e sh $cwd/tes3mp-server > /dev/null 2>&1 &\necho TES3MP-SERVER Started.\nkonsole --hold -e sh $cwd/tes3mp > /dev/null 2>&1 &\necho TES3MP Started." > startmw.sh
 chmod +x $cwd/startmw.sh
 wget https://github.com/allylavanda/TES3MP-Linux-Installer/blob/main/microwave.png
 mv microwave.png ~/.local/share/icons/microwave.png
