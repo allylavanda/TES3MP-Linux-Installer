@@ -35,7 +35,9 @@ cwd=$(pwd)
 
 echo -e "echo Starting TES3MP Server\ngnome-terminal -- sh $cwd/tes3mp-server\necho TES3MP-SERVER Started.\ngnome-terminal -- sh $cwd/tes3mp\necho TES3MP Started." > startmw.sh
 chmod +x $cwd/startmw.sh
-echo -e "[Desktop Entry]\nEncoding=UTF-8\nVersion=1.0\nType=Application\nTerminal=false\nExec=$cwd/startmw.sh\nName=TES3MP\nIcon=~/.local/share/icons/TES3MP.png" > ~/.local/share/applications/TES3MP.desktop
+wget https://github.com/allylavanda/TES3MP-Linux-Installer/blob/main/microwave.png
+mv microwave.png ~/.local/share/icons/microwave.png
+echo -e "[Desktop Entry]\nEncoding=UTF-8\nVersion=1.0\nType=Application\nTerminal=false\nExec=$cwd/startmw.sh\nName=TES3MP\nIcon=~/.local/share/icons/microwave.png" > ~/.local/share/applications/TES3MP.desktop
 chmod +x ~/.local/share/applications/TES3MP.desktop
 
 sh openmw-wizard
