@@ -6,7 +6,6 @@ echo Starting download of TES3MP
 wget https://github.com/TES3MP/TES3MP/releases/download/tes3mp-0.8.1/tes3mp-GNU+Linux-x86_64-release-0.8.1-68954091c5-6da3fdea59.tar.gz
 echo Download complete, extracting...
 echo Installing dependencies! - twolame,wavpack,libgme,libopenmpt,chromaprint,libluajit
-pacman -S twolame wavpack libgme libopenmpt chromaprint luajit
 tar xvf tes3mp-GNU+Linux-x86_64-release-0.8.1-68954091c5-6da3fdea59.tar.gz
 cd TES3MP
 cwd=$(pwd)
