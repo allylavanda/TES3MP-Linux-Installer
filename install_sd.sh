@@ -14,7 +14,7 @@ echo -e "#!/bin/bash\necho Starting TES3MP Server\nkonsole --hold -e sh $cwd/tes
 chmod +x $cwd/startmw.sh
 wget https://github.com/allylavanda/TES3MP-Linux-Installer/blob/main/microwave.png
 mv microwave.png ~/.local/share/icons/microwave.png
-echo -e "[Desktop Entry]\nEncoding=UTF-8\nVersion=1.0\nType=Application\nTerminal=false\nExec=$cwd/startmw.sh\nName=TES3MP\nIcon=~/.local/share/icons/microwave.png" > ~/.local/share/applications/TES3MP.desktop
+echo -e "[Desktop Entry]\nEncoding=UTF-8\nVersion=1.0\nType=Application\nTerminal=false\nExec=$cwd/startmw.sh\nName=TES3MP\nComment=OpenMW TES3MP+Server Launcher\nIcon=~/.local/share/icons/microwave.png" > ~/.local/share/applications/TES3MP.desktop
 chmod +x ~/.local/share/applications/TES3MP.desktop
 
 sh openmw-wizard
