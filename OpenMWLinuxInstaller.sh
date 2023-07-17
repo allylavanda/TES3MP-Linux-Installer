@@ -36,3 +36,4 @@ cwd=$(pwd)
 echo -e "echo Starting TES3MP Server\ngnome-terminal -- sh $cwd/tes3mp-server.sh\necho TES3MP-SERVER Started.\ngnome-terminal -- sh $cwd/tes3mp.sh\necho TES3MP Started." > startmw.sh
 chmod +x cwd/startmw.sh
 echo -e "[Desktop Entry]\nEncoding=UTF-8\nVersion=1.0\nType=Application\nTerminal=false\nExec=cwd/startmw.shName=TES3MPIcon=~/.local/share/icons/TES3MP.png" > ~/.local/share/applications/TES3MP.desktop
+chmod +x ~/.local/share/applications/TES3MP.desktop
