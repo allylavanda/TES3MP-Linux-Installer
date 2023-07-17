@@ -1,3 +1,4 @@
+#!/bin/bash
 echo TES3MP OpenMW Installer!
 echo  https://github.com/allylavanda/TES3MP-Linux-Installer                                                                                                             
 echo Starting download of TES3MP
